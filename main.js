@@ -1,68 +1,144 @@
-console.log("Ni");
+console.log("Bài tập luyện 2");
 
-console.log("Helloooo");    
+// Đầu vào 
+var n, unit, ten, hundred, sum
 
-// alert("Welcome to");
-// variable
-// = là phép gán
-// undefined: Tạo ra biến mà không có gtri
-var username = 'Bao';
-// console.log(username);
-var number_Student = 30;
-var tong = 100;
+n = 123;
+
+//Xử lý
 
 
-var isLogin = true;
-var address = null;
+unit = n % 10; // Lấy số ở hàng đơn vị
 
-var n1 = 10;
-var n2 = "5";
-var s = n1+n2;
-console.log(s); //Tinh tong
-var hieu= n1-n2;
-console.log(hieu); //Tinh hieu
-var kq_Hieu = "Hieu la: " +hieu;
-console.log(kq_Hieu); //Tinh hieu
+ten = Math.floor(n % 100 / 10); // Lấy số ở hàng chục
 
-var nhan = n1*n2;
-var kq_Nhan ="Nhan la: " +nhan;
-console.log(kq_Nhan);
-var chia = n1 / n2;
-var kq_Chia = "Chia la: "+ chia;
-console.log(kq_Chia);
+hundred = Math.floor(n /100) // Lấy số ở hàng trăm 
 
-var chiaLayDu = 4 % 3;
-var kq_ChiaLayDu = "Phan du la: " +chiaLayDu;
-console.log(kq_ChiaLayDu);
+sum = hundred + ten + unit; // Tính tổng của 3 chữ số 
 
-var count = 0;
-// var new_Count = ++count;
+//Đầu ra
+console.log("Tổng 3 ký số là: ",sum);
 
-var new_Count = count++;
-console.log(new_Count);
 
-const PI = 3.14; //
+console.log("------------------------------------------------------------------------");
 
-var edge1 = 3;
-var edge2 = 4;
-var edge3 ;
-edge3  = Math.sqrt(Math.pow(edge1,2) + Math.pow(edge2,2));
-console.log(edge3);
 
-var n = 345;
-var unit;
-var ten;
-var hundred;
-var sum;
-
-hundred = Math.floor(n / 100);
-ten = Math.floor(n%100/10);
-unit = Math.floor(n%10);
-
-sum = hundred + ten + unit;
-console.log(sum);
-
+console.log("Bài tập luyện 3");
 
 // Đầu vào
-// xử lý 
-// đầu ra
+
+var tenPhim, soVe, doanhThu, phanTramTuThien, tienTuThien, tongDoanhThu, soVeNguoiLon, soVeTreEm, giaVeNguoiLon, giaVeTreEm
+
+
+// Xử lý
+
+tenPhim = "End Game";
+
+soVeNguoiLon = 50;
+soVeTreEm = 100;
+
+giaVeTreEm = 50000;
+giaVeNguoiLon = 100000;
+
+soVe = soVeNguoiLon + soVeTreEm;//Tính tổng số vé
+
+doanhThu = soVeNguoiLon * giaVeNguoiLon + soVeTreEm * giaVeTreEm;// Tính tiền doanh thu
+
+phanTramTuThien = 0.1; // 
+
+tienTuThien = doanhThu * phanTramTuThien; // Tính tiền từ thiện
+
+tongDoanhThu = doanhThu - tienTuThien; // Tính tổng doanh thu 
+// Đầu ra
+// console.log(soVe, doanhThu, tienTuThien, tongDoanhThu);
+console.log("Tổng số vé ",soVe);
+console.log("Doanh thu: ",doanhThu);
+console.log("Tiền từ thiện: ",tienTuThien);
+console.log("Tổng doanh thu: ",tongDoanhThu);
+
+
+console.log("------------------------------------------------------------------------");
+console.log("Tính tiền lương nhân viên");
+
+//Đầu vào 
+
+var soNgayLam  = 3;
+const LUONG = 100000;
+
+//Xử lý
+
+var tongTienLuong = LUONG * soNgayLam; //Tiền lương = lương 1 ngày * số ngày làm
+
+//Đầu ra 
+
+console.log("Tổng tiền lương là: "+tongTienLuong);
+
+
+
+console.log("------------------------------------------------------------------------");
+console.log("Tính giá trị trung bình");
+
+//Đầu vào
+
+
+var n1 = 1.0;
+var n2 =  2.0;
+var n3 = 3.0;
+var n4 = 4.0;
+var n5 = 5.0;
+
+// Xử lý
+
+var tinhTrungBinh = (n1 + n2 + n3 + n4 + n5) / 5; //Cộng lại 5 số sau đó chia cho 5
+
+//Đầu ra 
+console.log("Giá trị trung bình là: ",tinhTrungBinh);
+
+
+console.log("------------------------------------------------------------------------");
+
+console.log("Quy đổi tiền");
+
+
+//Đầu vào 
+
+var dollar = 2;
+const VND = 23.500;
+
+//Xử lý
+var quyDoi = dollar * VND;
+
+//Đầu ra 
+console.log("USD sang VND = ",quyDoi); 
+
+console.log("------------------------------------------------------------------------");
+
+console.log("Tính diện tích, chu vi hình chữ nhật");
+
+
+//Đầu vào
+var cd = 50;
+var cr = 20;
+
+///Xử lý
+
+var dienTich = cd * cr; //Áp dụng công thức tính diện tích
+var chuVi =  (cd + cr) * 2;//Áp dụng công thức tính chu vi
+
+// Đầu ra
+
+console.log("Diện tích hình chữ nhật là: ",dienTich);
+console.log("Chu vi hình chữ nhật là: ",chuVi);
+
+
+console.log("------------------------------------------------------------------------");
+
+console.log("Tính tổng 2 ký số")
+//Đầu vào
+var number = 22;
+//Xử lý
+var hangDV = number % 10; // Lấy hàng đơn vị
+var hangChuc = Math.floor(number % 100 / 10); //Lấy hàng chục
+//Đầu ra
+
+console.log("Tổng 2 ký số: ",hangDV+hangChuc)
